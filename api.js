@@ -1,6 +1,5 @@
-
 module.exports = (app) => {
-  app.post('/receive-xml', (req, res, next) => {
+  app.post('/convert-xml', (req, res, next) => {
     res.send(req.body.odfbody);
   });
 }

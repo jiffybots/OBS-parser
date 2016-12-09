@@ -5,6 +5,7 @@ const bodyParser = require('body-parser');
 const xmlparser = require('express-xml-bodyparser');
 const router = express.Router();
 const port = process.env.PORT || 3000;
+const parse = require('./parseXMLtoJSON');
 
 // Define middleware
 app.use(bodyParser.json());
