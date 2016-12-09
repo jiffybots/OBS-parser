@@ -1,8 +1,6 @@
 
 module.exports = (app) => {
-  app.post('/receive-xml', function(req, res, next) {
-
-    // req.body contains the parsed xml
-
-  })
+  app.post('/receive-xml', (req, res, next) => {
+    res.send(req.body.odfbody);
+  });
 }
